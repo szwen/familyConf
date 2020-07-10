@@ -13,9 +13,27 @@ It requires some preparation beforehand, but the idea is that once installed it 
 - A raspberry pi - any of them. I chose raspi 3 even if 4 was already out since it is much cheaper and has ports compatible with older devices.
 - A SD card and card reader for the set up of the raspi OS.
 - A webcam
-- A remote control
+- A remote control (??)
 
 ## Setup
+
+### 1. Raspberry initial setup
+Install the Raspberry Pi OS: https://www.raspberrypi.org/downloads/raspberry-pi-os/
+That should be a regular installation according to your raspi model
+
+### 2. WEBCAM setup
+Connect the webcam to the raspberry pi and run a few tests with the chosen videoconferencing platform to check that the hardware works fine.
+This step heavily depends on the chosen platform. For example, we are going to use Google Meet from the Chromium browser, which required us to select the microphone source both in Chromium (chrome://settings/content/microphone) and in the Meet platform. We selected one of the entries named 'USB Audio-Hardware device'.
+
+### 3. Videoconference autorun
+
+Set up browser autorun for de videoconferencing: 
+- Edit the autostart file, which might be in different paths depending on the OS version:
+`nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+`nano /etc/xdg/lxsession/LXDE/autostart`
+- Add `chromium-brower --start-fullscreen [path to the meeting]`
+We chose path to the meeting to be: meet.google.com/meetingid
+
 
 ## Questions
 
