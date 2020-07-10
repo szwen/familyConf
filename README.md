@@ -36,7 +36,10 @@ We chose path to the meeting to be: meet.google.com/meetingid
 
 ### 4. Remote control / troubleshooting
 
-https://www.raspberrypi.org/documentation/remote-access/vnc/
+Follow the steps to enable VNC: https://www.raspberrypi.org/documentation/remote-access/vnc/
+- Activate VNC server in the raspi
+- Create a realVNC account to be able to connect to the raspi from another network
+
 
 ## Questions
 
