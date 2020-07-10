@@ -34,6 +34,9 @@ Set up browser autorun for de videoconferencing:
 - Add `chromium-brower --start-fullscreen [path to the meeting]`
 We chose path to the meeting to be: meet.google.com/meetingid
 
+### 4. Remote control / troubleshooting
+
+https://www.raspberrypi.org/documentation/remote-access/vnc/
 
 ## Questions
 
