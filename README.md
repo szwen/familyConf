@@ -16,3 +16,11 @@ It requires some preparation beforehand, but the idea is that once installed it 
 - A remote control
 
 ## Setup
+
+## Questions
+
+Which videoconference mechanism?
+*Hangouts:*
+- How long do unique conference links last?
+- How can I share a link with somebody?
+
