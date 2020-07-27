@@ -2,7 +2,7 @@
 A family videoconference setup
 
 ## Intro
-In the Covid-19 time, there have been (and may be) times when we can't be together with our families. Videoconferencing platforms have been highly used for this purpose, but as with any other new technologies, it might be frequent that elder people struggle with it and can't participate leaving them isolated.
+In the Covid-19 time, there have been (and may be) times when we can't be together with our families. Videoconferencing platforms have been highly used for this purpose, but as with any other new technologies, it might be frequent that elder people struggle with it and can't participate, which leaves them isolated.
 
 The purpose of this project is to set up a simple, low cost and easy to use videoconferencing system for my grandparents and any grandparents in the world, or whoever prefers to use their TV instead of a computer or a smartphone to speak with their loved ones.
 
@@ -36,7 +36,7 @@ Most modern TVs have support for the CEC (Consumer Electronics Control) feature 
 
 Note that, depending on the TV brand, CEC capabilities must be enabled using the advanced TV menu, and for this you need to find the specific instructions (for example [this](https://www.tomsguide.com/us/lg-tv-settings-guide,review-5624-14.html) for LG TVs).
 
-Some useful instructions obtained from [here](https://www.linuxuprising.com/2019/07/raspberry-pi-power-on-off-tv-connected.html) to test that the TV you are going to use in the setup offers this capability:
+Some useful instructions obtained from [here](https://www.linuxuprising.com/2019/07/raspberry-pi-power-on-off-tv-connected.html) to test that this works with your TV:
 
 1. Install CEC-utils in your Raspi: `sudo apt install cec-utils`
 2. Find connected devices with CEC support (note that you need to connect the Raspi to your TV with the HDMI beforehand): `echo 'scan' | cec-client -s -d 1`
