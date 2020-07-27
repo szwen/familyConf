@@ -83,12 +83,16 @@ In case the TV doesn't have CEC capabilities and you don't want to deal with LIR
 
 #### 3.2 Videoconference autorun setup
 Set up browser autorun for de videoconferencing: 
-- Edit the autostart file, which might be in different paths depending on the OS version:
+
+1. Edit the autostart file, which might be in different paths depending on the OS version:
 * `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
 * `nano /etc/xdg/lxsession/LXDE/autostart`
 * `nano /etc/xdg/lxsession/LXDE-pi/autostart`
-- Add `@chromium-browser --start-fullscreen [path to the meeting]`
-We chose path to the meeting to be: meet.google.com/meetingid
+
+2. Add `@chromium-browser --start-fullscreen [path to the meeting]`
+
+We chose path to the meeting to be: meet.google.com/<MEETINGID>
+Due to the requirements of Google Meet, we need to have set up a gmail account in the Raspi, as well as to have sent to that account an invite to that meeting.
 
 ### 4. Remote control / troubleshooting
 
