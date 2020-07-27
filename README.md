@@ -34,7 +34,7 @@ The main idea of this step is to enable the Raspi to:
 #### 3.1 Raspi takeover of the TV (optional)
 Most modern TVs have support for the CEC (Consumer Electronics Control) feature of HDMI. This means that a device connected through HDMI to our TV can control it, for example turning it on and off, or switching the TV source. This way, we can force that when the Raspi is turned on the TV source automatically switches to show the Raspi screen.
 
-Note that, depending on the TV brand, CEC capabilities must be enabled using the advanced TV menu, and for this you need to find the specific instructions (for example [this | https://www.tomsguide.com/us/lg-tv-settings-guide,review-5624-14.html] for LG TVs.
+Note that, depending on the TV brand, CEC capabilities must be enabled using the advanced TV menu, and for this you need to find the specific instructions (for example [this|https://www.tomsguide.com/us/lg-tv-settings-guide,review-5624-14.html] for LG TVs.
 
 Some useful instructions obtained from [here | https://www.linuxuprising.com/2019/07/raspberry-pi-power-on-off-tv-connected.html] to test that the TV you are going to use in the setup offers this capability:
 
