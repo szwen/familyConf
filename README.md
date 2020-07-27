@@ -63,9 +63,9 @@ Make it executable by running `chmod +x run_cec.sh`
 
 
 2. Edit the autostart file, which might be in different paths depending on the OS version:
-. `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
-. `nano /etc/xdg/lxsession/LXDE/autostart`
-. `nano /etc/xdg/lxsession/LXDE-pi/autostart`
+* `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+* `nano /etc/xdg/lxsession/LXDE/autostart`
+* `nano /etc/xdg/lxsession/LXDE-pi/autostart`
 
 Add the @lxterminal step to spawn a terminal on startup and pass it the script:
 
@@ -84,9 +84,9 @@ In case the TV doesn't have CEC capabilities and you don't want to deal with LIR
 #### 3.2 Videoconference autorun setup
 Set up browser autorun for de videoconferencing: 
 - Edit the autostart file, which might be in different paths depending on the OS version:
-. `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
-. `nano /etc/xdg/lxsession/LXDE/autostart`
-. `nano /etc/xdg/lxsession/LXDE-pi/autostart`
+* `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+* `nano /etc/xdg/lxsession/LXDE/autostart`
+* `nano /etc/xdg/lxsession/LXDE-pi/autostart`
 - Add `@chromium-browser --start-fullscreen [path to the meeting]`
 We chose path to the meeting to be: meet.google.com/meetingid
 
