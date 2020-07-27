@@ -87,8 +87,9 @@ Automatically open the browser with the meeting link and join it:
 
 2. Add a step to open chrome with the selected link: `@chromium-browser --start-fullscreen [path to the meeting]`
 
-We chose path to the meeting to be: meet.google.com/<MEETINGID>
-Due to the requirements of Google Meet, we need to have set up a gmail account in the Raspi, as well as to have sent to that account an invite to that meeting.
+We chose the path to the videoconference: `meet.google.com/<MEETINGID>`
+
+Due to the requirements of Google Meet, we need to set up a gmail account in the Raspi, as well as to send an invite to the videoconference to it.
   
 3. Join the meeting: in all the meeting programs we have seen, there is always a last step of joining the meeting by clicking a button. To automate it we propose Selenium, which allows to use hooks in the web app. https://www.selenium.dev/documentation/en/webdriver/
 
