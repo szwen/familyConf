@@ -18,7 +18,7 @@ It requires some preparation beforehand, but the idea is that once installed it 
 ## Setup
 
 ### 1. Raspberry initial setup
-Install the Raspberry Pi OS: https://www.raspberrypi.org/downloads/raspberry-pi-os/
+[Install](https://www.raspberrypi.org/downloads/raspberry-pi-os/) the Raspberry Pi OS
 That should be a regular installation according to your raspi model
 
 ### 2. WEBCAM setup
