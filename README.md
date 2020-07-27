@@ -43,9 +43,35 @@ Some useful instructions obtained from [here](https://www.linuxuprising.com/2019
 
 Given that you have a TV with CEC capabilities enabled, we'll configure the autostart Raspi menu to take over the TV as the active input source when it is turned on by adding this line:
 `echo 'as' | cec-client -s -d 1`
+
 Optionally you can (previously) make it turn on the TV by adding this line:
 `echo 'on <DEVICE #>' | cec-client -s -d 1`
+
 Where *<DEVICE #>* should be replaced with the device number assigned to the TV, which you saw when you run the previous `scan` command.
+
+In summary, the autostart configuration goes as follows:
+1. Create a script in your home directory with the following contents:
+```
+run_cec.sh:
+
+#!/bin/bash
+
+echo 'as' | cec-client -s -d 1
+```
+
+Make it executable by running `chmod +x run_cec.sh`
+
+
+2. Edit the autostart file, which might be in different paths depending on the OS version:
+. `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+. `nano /etc/xdg/lxsession/LXDE/autostart`
+. `nano /etc/xdg/lxsession/LXDE-pi/autostart`
+
+Add the @lxterminal step to spawn a terminal on startup and pass it the script:
+
+`@lxterminal --command "/home/pi/run_cec.sh"`
+
+
 
 **IR Alternative**
 
@@ -58,9 +84,9 @@ In case the TV doesn't have CEC capabilities and you don't want to deal with LIR
 #### 3.2 Videoconference autorun setup
 Set up browser autorun for de videoconferencing: 
 - Edit the autostart file, which might be in different paths depending on the OS version:
-`nano /home/pi/.config/lxsession/LXDE-pi/autostart`
-`nano /etc/xdg/lxsession/LXDE/autostart`
-`nano /etc/xdg/lxsession/LXDE-pi/autostart`
+. `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+. `nano /etc/xdg/lxsession/LXDE/autostart`
+. `nano /etc/xdg/lxsession/LXDE-pi/autostart`
 - Add `@chromium-browser --start-fullscreen [path to the meeting]`
 We chose path to the meeting to be: meet.google.com/meetingid
 
