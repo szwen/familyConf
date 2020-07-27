@@ -18,11 +18,11 @@ It requires some preparation beforehand, but the idea is that once installed it 
 ## Setup
 
 ### 1. Raspberry initial setup
-[Install](https://www.raspberrypi.org/downloads/raspberry-pi-os/) the Raspberry Pi OS
-That should be a regular installation according to your raspi model
+[Install](https://www.raspberrypi.org/downloads/raspberry-pi-os/) the Raspberry Pi OS. That should be a regular installation according to your raspi model
 
 ### 2. WEBCAM setup
 Connect the webcam to the raspberry pi and run a few tests with the chosen videoconferencing platform to check that the hardware works fine.
+
 This step heavily depends on the chosen platform. For example, we are going to use Google Meet from the Chromium browser, which required us to select the microphone source both in Chromium settings (chrome://settings/content/microphone) and in the Meet platform. We selected an entry named 'USB Audio-Hardware device'.
 
 
@@ -84,17 +84,16 @@ In case the TV doesn't have CEC capabilities and you don't want to deal with LIR
 #### 3.2 Videoconference autorun setup
 Set up browser autorun for de videoconferencing: 
 
-1. Edit the autostart file, which might be in different paths depending on the OS version:
-* `nano /home/pi/.config/lxsession/LXDE-pi/autostart`
-* `nano /etc/xdg/lxsession/LXDE/autostart`
-* `nano /etc/xdg/lxsession/LXDE-pi/autostart`
+1. Edit the autostart file, which (as we said above) might be in different paths depending on the OS version.
 
-2. Add `@chromium-browser --start-fullscreen [path to the meeting]`
+2. Add a step to open chrome with the selected link: `@chromium-browser --start-fullscreen [path to the meeting]`
 
 We chose path to the meeting to be: meet.google.com/<MEETINGID>
 Due to the requirements of Google Meet, we need to have set up a gmail account in the Raspi, as well as to have sent to that account an invite to that meeting.
 
 ### 4. Remote control / troubleshooting
+
+This might be the best (although not ideal) solution for updating configurations, as well as for starting the meeting in remote. In case we use a full remote solution, we'll still need **step 3.1** (automated or manual) in order to choose the correct source for the TV, however we can skip **step 3.2**.
 
 Follow the steps to enable VNC: https://www.raspberrypi.org/documentation/remote-access/vnc/
 - Activate VNC server in the raspi
@@ -104,7 +103,7 @@ Follow the steps to enable VNC: https://www.raspberrypi.org/documentation/remote
 ## Questions
 
 Which videoconference mechanism?
-*Hangouts:*
+*Google meet:*
 - How long do unique conference links last?
-- How can I share a link with somebody?
+
 
