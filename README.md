@@ -34,9 +34,9 @@ The main idea of this step is to enable the Raspi to:
 #### 3.1 Raspi takeover of the TV (depends on the TV model)
 Most modern TVs have support for the CEC (Consumer Electronics Control) feature of HDMI. This means that a device connected through HDMI to our TV can control it, for example turning it on and off, or switching the TV source. This way, we can force that when the Raspi is turned on the TV source automatically switches to show the Raspi screen.
 
-Note that, depending on the TV brand, CEC capabilities must be enabled using the advanced TV menu, and for this you need to find the specific instructions (for example [this](https://www.tomsguide.com/us/lg-tv-settings-guide,review-5624-14.html) for LG TVs.
+Note that, depending on the TV brand, CEC capabilities must be enabled using the advanced TV menu, and for this you need to find the specific instructions (for example [this](https://www.tomsguide.com/us/lg-tv-settings-guide,review-5624-14.html) for LG TVs).
 
-Some useful instructions obtained from [here] (https://www.linuxuprising.com/2019/07/raspberry-pi-power-on-off-tv-connected.html) to test that the TV you are going to use in the setup offers this capability:
+Some useful instructions obtained from [here](https://www.linuxuprising.com/2019/07/raspberry-pi-power-on-off-tv-connected.html) to test that the TV you are going to use in the setup offers this capability:
 
 1. Install CEC-utils in your Raspi: `sudo apt install cec-utils`
 2. Find connected devices with CEC support (note that you need to connect the Raspi to your TV with the HDMI beforehand): `echo 'scan' | cec-client -s -d 1`
@@ -49,7 +49,7 @@ Where *<DEVICE #>* should be replaced with the device number assigned to the TV,
 
 **IR Alternative**
 
-Alternatively, you can transform your Raspi into a TV controller using a IR transceiver. We won't dive into this solution here, but there are some interesting pages [here] (https://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote), [here] (http://opensourceuniversalremote.com/) and [here](https://raspberrypi.stackexchange.com/questions/22433/what-hardware-do-i-need-to-turn-raspberry-pi-into-a-tv-remote-controller)
+Alternatively, you can transform your Raspi into a TV controller using a IR transceiver. We won't dive into this solution here, but there are some interesting pages [here](https://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote), [here](http://opensourceuniversalremote.com/) and [here](https://raspberrypi.stackexchange.com/questions/22433/what-hardware-do-i-need-to-turn-raspberry-pi-into-a-tv-remote-controller)
 
 **Manual Alternative**
 
