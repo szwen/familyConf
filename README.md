@@ -72,7 +72,6 @@ Add the @lxterminal step to spawn a terminal on startup and pass it the script:
 `@lxterminal --command "/home/pi/run_cec.sh"`
 
 
-
 **IR Alternative**
 
 Alternatively, you can transform your Raspi into a TV controller using a IR transceiver. We won't dive into this solution here, but there are some interesting pages [here](https://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote), [here](http://opensourceuniversalremote.com/) and [here](https://raspberrypi.stackexchange.com/questions/22433/what-hardware-do-i-need-to-turn-raspberry-pi-into-a-tv-remote-controller)
@@ -82,7 +81,7 @@ Alternatively, you can transform your Raspi into a TV controller using a IR tran
 In case the TV doesn't have CEC capabilities and you don't want to deal with LIRC, we can leave it up to the user to change the TV source to the HDMI port where the Raspi is connected to. 
 
 #### 3.2 Videoconference autorun setup
-Set up browser autorun for de videoconferencing: 
+Automatically open the browser with the meeting link and join it: 
 
 1. Edit the autostart file, which (as we said above) might be in different paths depending on the OS version.
 
@@ -90,15 +89,17 @@ Set up browser autorun for de videoconferencing:
 
 We chose path to the meeting to be: meet.google.com/<MEETINGID>
 Due to the requirements of Google Meet, we need to have set up a gmail account in the Raspi, as well as to have sent to that account an invite to that meeting.
+  
+3. Join the meeting: in all the meeting programs we have seen, there is always a last step of joining the meeting by clicking a button. To automate it we propose Selenium, which allows to use hooks in the web app. https://www.selenium.dev/documentation/en/webdriver/
 
 ### 4. Remote control / troubleshooting
 
-This might be the best (although not ideal) solution for updating configurations, as well as for starting the meeting in remote. In case we use a full remote solution, we'll still need **step 3.1** (automated or manual) in order to choose the correct source for the TV, however we can skip **step 3.2**.
+This might be the best (although not ideal) solution for updating configurations, setting up the camera drivers, as well as for starting the meeting remotely if needed. In case we use a this remote solution to run the meetings, we'll still need **step 3.1** (automated or manual) in order to choose the correct source for the TV, however we can skip **step 3.2**.
 
 Follow the steps to enable VNC: https://www.raspberrypi.org/documentation/remote-access/vnc/
-- Activate VNC server in the raspi
-- Create a realVNC account to be able to connect to the raspi from another network
-
+- Activate VNC server in the Raspi
+- Create a realVNC account to be able to connect to the Raspi from another network
+- Install the VNC client in the controller device and start managing the Raspi remotely!
 
 ## Questions
 
