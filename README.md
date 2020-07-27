@@ -23,7 +23,7 @@ That should be a regular installation according to your raspi model
 
 ### 2. WEBCAM setup
 Connect the webcam to the raspberry pi and run a few tests with the chosen videoconferencing platform to check that the hardware works fine.
-This step heavily depends on the chosen platform. For example, we are going to use Google Meet from the Chromium browser, which required us to select the microphone source both in [Chromium settings](chrome://settings/content/microphone) and in the Meet platform. We selected an entry named 'USB Audio-Hardware device'.
+This step heavily depends on the chosen platform. For example, we are going to use Google Meet from the Chromium browser, which required us to select the microphone source both in Chromium settings (chrome://settings/content/microphone) and in the Meet platform. We selected an entry named 'USB Audio-Hardware device'.
 
 
 ### 3. Videoconference autorun
