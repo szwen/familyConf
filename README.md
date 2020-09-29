@@ -100,7 +100,7 @@ This might be the best (although not ideal) solution for updating configurations
 Follow the steps to enable VNC: https://www.raspberrypi.org/documentation/remote-access/vnc/
 - Activate VNC server in the Raspi
 - Create a realVNC account to be able to connect to the Raspi from another network
-- Install the VNC client in the controller device and start managing the Raspi remotely!
+- [Install the VNC client in the controller device](https://www.realvnc.com/en/connect/download/viewer/macos/) and start managing the Raspi remotely!
 
 ## Questions
 
