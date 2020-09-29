@@ -92,6 +92,7 @@ We chose the path to the videoconference: `meet.google.com/<MEETINGID>`
 Due to the requirements of Google Meet, we need to set up a gmail account in the Raspi, as well as to send an invite to the videoconference to it.
   
 3. Join the meeting: in all the meeting programs we have seen, there is always a last step of joining the meeting by clicking a button. To automate it we propose Selenium, which allows to use hooks in the web app. https://www.selenium.dev/documentation/en/webdriver/
+__note: it seems that buttons in google meet are obfuscated, it may be easier with meet.jit.si for example__
 
 ### 4. Remote control / troubleshooting
 
